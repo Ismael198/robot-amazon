@@ -1,0 +1,52 @@
+name: E2E Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  e2e-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        browser: [chromium, firefox]
+
+    steps:
+      - name: Get code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Garante que todos os arquivos sejam baixados
+
+      - name: Debug Test Directory
+        run: ls -R  # Verifica se os testes estão no lugar correto
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+
+      - name: Install Deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt 
+
+      - name: Check Selenium Installation
+        run: python -c "import selenium; print(selenium.__version__)"
+
+      - name: Run E2E Tests
+        run: robot -d ./logs -v BROWSER:${{ matrix.browser }} tests
+
+      - name: Robot Reporter
+        uses: joonvena/robotframework-reporter-action@v2.4
+        with:
+          gh_access_token: ${{ secrets.GITHUB_TOKEN }}
+          report_path: logs
+
+      - name: Upload Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Test Report ${{ matrix.browser }}
+          path: logs
