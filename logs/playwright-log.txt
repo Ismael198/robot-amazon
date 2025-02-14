@@ -1,0 +1,83 @@
+{"level":30,"time":"2024-10-22T11:30:07.831Z","pid":69214,"hostname":"ismael","msg":"Listening on 51019"}
+(node:69214) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-10-22T11:30:07.857Z","pid":69214,"hostname":"ismael","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:07.857Z","pid":69214,"hostname":"ismael","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:07.862Z","pid":69214,"hostname":"ismael","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:07.863Z","pid":69214,"hostname":"ismael","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:07.870Z","pid":69214,"hostname":"ismael","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-10-22T11:30:08.043Z","pid":69214,"hostname":"ismael","msg":"Adding browser to stack: chromium, version: 128.0.6613.18"}
+{"level":30,"time":"2024-10-22T11:30:08.044Z","pid":69214,"hostname":"ismael","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-10-22T11:30:08.044Z","pid":69214,"hostname":"ismael","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-10-22T11:30:08.055Z","pid":69214,"hostname":"ismael","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-10-22T11:30:08.056Z","pid":69214,"hostname":"ismael","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-10-22T11:30:08.071Z","pid":69214,"hostname":"ismael","msg":"Changed active context"}
+{"level":30,"time":"2024-10-22T11:30:08.335Z","pid":69214,"hostname":"ismael","msg":"Video path: undefined"}
+{"level":30,"time":"2024-10-22T11:30:08.335Z","pid":69214,"hostname":"ismael","msg":"Changed active page"}
+{"level":30,"time":"2024-10-22T11:30:09.939Z","pid":69214,"hostname":"ismael","msg":"End of node method newPage"}
+{"level":30,"time":"2024-10-22T11:30:09.958Z","pid":69214,"hostname":"ismael","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-10-22T11:30:09.959Z","pid":69214,"hostname":"ismael","Take screenshot with options: ":{"path":"/home/nunes/robot-amazon/logs/browser/screenshot/robotframework-browser-screenshot-1.png","fileType":"png","fullPage":true,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-10-22T11:30:12.446Z","pid":69214,"hostname":"ismael","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-10-22T11:30:12.455Z","pid":69214,"hostname":"ismael","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:12.459Z","pid":69214,"hostname":"ismael","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:12.464Z","pid":69214,"hostname":"ismael","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:12.469Z","pid":69214,"hostname":"ismael","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:12.474Z","pid":69214,"hostname":"ismael","msg":"Changed active context"}
+{"level":30,"time":"2024-10-22T11:30:12.475Z","pid":69214,"hostname":"ismael","msg":"Changing current active page: page=bba55e8a-2c82-4bac-8130-1bb5a1d84b5d"}
+{"level":30,"time":"2024-10-22T11:30:12.475Z","pid":69214,"hostname":"ismael","msg":"Changed active page"}
+{"level":30,"time":"2024-10-22T11:30:12.481Z","pid":69214,"hostname":"ismael","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:12.483Z","pid":69214,"hostname":"ismael","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:12.487Z","pid":69214,"hostname":"ismael","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-10-22T11:30:12.487Z","pid":69214,"hostname":"ismael","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-10-22T11:30:12.491Z","pid":69214,"hostname":"ismael","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-10-22T11:30:12.491Z","pid":69214,"hostname":"ismael","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-10-22T11:30:12.495Z","pid":69214,"hostname":"ismael","msg":"Changing current active page: page=bba55e8a-2c82-4bac-8130-1bb5a1d84b5d"}
+{"level":30,"time":"2024-10-22T11:30:12.495Z","pid":69214,"hostname":"ismael","msg":"Changed active page"}
+{"level":30,"time":"2024-10-22T11:30:12.499Z","pid":69214,"hostname":"ismael","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:12.501Z","pid":69214,"hostname":"ismael","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:12.504Z","pid":69214,"hostname":"ismael","msg":"Changed active context"}
+{"level":30,"time":"2024-10-22T11:30:12.504Z","pid":69214,"hostname":"ismael","msg":"Changing current active page: page=bba55e8a-2c82-4bac-8130-1bb5a1d84b5d"}
+{"level":30,"time":"2024-10-22T11:30:12.504Z","pid":69214,"hostname":"ismael","msg":"Changed active page"}
+{"level":30,"time":"2024-10-22T11:30:12.507Z","pid":69214,"hostname":"ismael","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-10-22T11:30:12.516Z","pid":69214,"hostname":"ismael","msg":"Removed page=3032fa84-15ca-44ea-8db9-dba4943eaf8f from context=3e0cafb3-fa82-4497-ab3a-80664b6f2922 page stack"}
+{"level":30,"time":"2024-10-22T11:30:12.519Z","pid":69214,"hostname":"ismael","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-10-22T11:30:12.531Z","pid":69214,"hostname":"ismael","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:12.531Z","pid":69214,"hostname":"ismael","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:12.538Z","pid":69214,"hostname":"ismael","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-10-22T11:30:12.538Z","pid":69214,"hostname":"ismael","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-10-22T11:30:12.542Z","pid":69214,"hostname":"ismael","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-10-22T11:30:12.542Z","pid":69214,"hostname":"ismael","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-10-22T11:30:12.551Z","pid":69214,"hostname":"ismael","msg":"Changed active context"}
+{"level":30,"time":"2024-10-22T11:30:12.595Z","pid":69214,"hostname":"ismael","msg":"Video path: undefined"}
+{"level":30,"time":"2024-10-22T11:30:12.595Z","pid":69214,"hostname":"ismael","msg":"Changed active page"}
+{"level":30,"time":"2024-10-22T11:30:14.098Z","pid":69214,"hostname":"ismael","msg":"End of node method newPage"}
+{"level":30,"time":"2024-10-22T11:30:14.118Z","pid":69214,"hostname":"ismael","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-10-22T11:30:14.119Z","pid":69214,"hostname":"ismael","Take screenshot with options: ":{"path":"/home/nunes/robot-amazon/logs/browser/screenshot/robotframework-browser-screenshot-2.png","fileType":"png","fullPage":true,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-10-22T11:30:16.498Z","pid":69214,"hostname":"ismael","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-10-22T11:30:16.505Z","pid":69214,"hostname":"ismael","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:16.508Z","pid":69214,"hostname":"ismael","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:16.511Z","pid":69214,"hostname":"ismael","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:16.517Z","pid":69214,"hostname":"ismael","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:16.521Z","pid":69214,"hostname":"ismael","msg":"Changed active context"}
+{"level":30,"time":"2024-10-22T11:30:16.521Z","pid":69214,"hostname":"ismael","msg":"Changing current active page: page=64f0d860-bdf0-4d5f-b9dc-5c65a8b1ebc1"}
+{"level":30,"time":"2024-10-22T11:30:16.522Z","pid":69214,"hostname":"ismael","msg":"Changed active page"}
+{"level":30,"time":"2024-10-22T11:30:16.527Z","pid":69214,"hostname":"ismael","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:16.529Z","pid":69214,"hostname":"ismael","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:16.533Z","pid":69214,"hostname":"ismael","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-10-22T11:30:16.533Z","pid":69214,"hostname":"ismael","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-10-22T11:30:16.536Z","pid":69214,"hostname":"ismael","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-10-22T11:30:16.536Z","pid":69214,"hostname":"ismael","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-10-22T11:30:16.540Z","pid":69214,"hostname":"ismael","msg":"Changing current active page: page=64f0d860-bdf0-4d5f-b9dc-5c65a8b1ebc1"}
+{"level":30,"time":"2024-10-22T11:30:16.540Z","pid":69214,"hostname":"ismael","msg":"Changed active page"}
+{"level":30,"time":"2024-10-22T11:30:16.545Z","pid":69214,"hostname":"ismael","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:16.547Z","pid":69214,"hostname":"ismael","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:16.549Z","pid":69214,"hostname":"ismael","msg":"Changed active context"}
+{"level":30,"time":"2024-10-22T11:30:16.549Z","pid":69214,"hostname":"ismael","msg":"Changing current active page: page=64f0d860-bdf0-4d5f-b9dc-5c65a8b1ebc1"}
+{"level":30,"time":"2024-10-22T11:30:16.549Z","pid":69214,"hostname":"ismael","msg":"Changed active page"}
+{"level":30,"time":"2024-10-22T11:30:16.551Z","pid":69214,"hostname":"ismael","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-10-22T11:30:16.557Z","pid":69214,"hostname":"ismael","msg":"Removed page=1b553c1f-cc02-4635-8514-66176c2285a0 from context=a42e67a3-6a99-488e-be44-bfc2c3fdef87 page stack"}
+{"level":30,"time":"2024-10-22T11:30:16.565Z","pid":69214,"hostname":"ismael","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-10-22T11:30:16.577Z","pid":69214,"hostname":"ismael","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:16.577Z","pid":69214,"hostname":"ismael","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-22T11:30:16.630Z","pid":69214,"hostname":"ismael","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-10-22T11:30:16.675Z","pid":69214,"hostname":"ismael","msg":"End of node method closeAllBrowsers"}

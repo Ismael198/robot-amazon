@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on linux)" generated="2025-02-13T21:32:41.611819" rpa="false" schemaversion="5">
+<suite id="s1" name="Amazon Test Bdd" source="/home/nunes/robot-amazon/tests/amazon_test_bdd.robot">
+<test id="s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="9">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:32:42.619016" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-13T21:32:42.617132" elapsed="6.769140"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-13T21:32:49.388170" elapsed="0.068281"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:32:42.609761" elapsed="6.847445"/>
+</kw>
+<kw name="Dado que estou na home page da Amazon.com.br" owner="base">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:32:49.476800" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-02-13T21:32:49.475119" elapsed="8.058124"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-13T21:32:57.547000" elapsed="3.005016"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:32:49.472321" elapsed="11.080485"/>
+</kw>
+<kw name="Quando acessar o menu &quot;Eletrônicos&quot;" owner="base">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:33:00.559211" level="INFO">Clicking element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics']'.</msg>
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-13T21:33:00.557499" elapsed="10.203745"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:33:00.554557" elapsed="10.207370"/>
+</kw>
+<kw name="Então o título da página deve ficar &quot;Eletrônicos e Tecnologia | Amazon.com.br&quot;" owner="base" source_name="Então o título da página deve ficar &quot;${FRASE}&quot;">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>text=${FRASE}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-13T21:33:10.772030" elapsed="0.505411"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:33:10.766609" elapsed="0.511356"/>
+</kw>
+<kw name="E o texto &quot;Até 25% off em Eletrônicos e TVs | Esquenta Black Friday&quot; deve ser exibido na página" owner="base">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:33:17.169550" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-13T21:33:17.171525" level="FAIL">Element '//h1[contains(.,'Até 25% off em Eletrônicos e TVs | Esquenta Black Friday')]' not visible after 5 seconds.</msg>
+<arg>locator=${HEADER_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-02-13T21:33:11.280900" elapsed="5.905793">Element '//h1[contains(.,'Até 25% off em Eletrônicos e TVs | Esquenta Black Friday')]' not visible after 5 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-02-13T21:33:11.279270" elapsed="5.910240">Element '//h1[contains(.,'Até 25% off em Eletrônicos e TVs | Esquenta Black Friday')]' not visible after 5 seconds.</status>
+</kw>
+<kw name="E a categoria &quot;Computadores e Informática&quot; deve ser exibida na página" owner="base" source_name="E a categoria &quot;${NOME_CATEGORIA}&quot; deve ser exibida na página">
+<status status="NOT RUN" start="2025-02-13T21:33:17.193966" elapsed="0.000364"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:33:17.859882" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-13T21:33:17.206890" elapsed="0.653593"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-13T21:33:17.861580" elapsed="0.813907"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:33:17.201607" elapsed="1.474730"/>
+</kw>
+<doc>Esse teste verifica o menu eletrônicos do site da Amazon.com.br
+e verifica a categoria Computadores e Informática</doc>
+<tag>menus_categorias</tag>
+<status status="FAIL" start="2025-02-13T21:32:42.602446" elapsed="36.074812">Element '//h1[contains(.,'Até 25% off em Eletrônicos e TVs | Esquenta Black Friday')]' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t2" name="Caso de Teste 02 - Pesquisa de um Produto" line="19">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:33:18.729241" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-13T21:33:18.723885" elapsed="4.834983"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-13T21:33:23.559620" elapsed="0.195348"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:33:18.711546" elapsed="5.044167"/>
+</kw>
+<kw name="Dado que estou na home page da Amazon.com.br" owner="base">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:33:23.764244" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-02-13T21:33:23.762686" elapsed="7.097215"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-13T21:33:30.862181" elapsed="3.069530"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:33:23.760150" elapsed="10.172261"/>
+</kw>
+<kw name="Quando pesquisar pelo produto &quot;Xbox Series S&quot;" owner="base" source_name="Quando pesquisar pelo produto &quot;${PRODUTO}&quot;">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:33:33.949353" level="INFO">Typing text 'Xbox Series S' into text field 'twotabsearchtextbox'.</msg>
+<arg>locator=twotabsearchtextbox</arg>
+<arg>text=${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-13T21:33:33.946655" elapsed="2.177218"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:33:33.940154" elapsed="2.184512"/>
+</kw>
+<kw name="E clicar no botão de pesquisa" owner="base">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:33:36.144369" level="INFO">Clicking element 'nav-search-submit-button'.</msg>
+<arg>locator=nav-search-submit-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-13T21:33:36.136540" elapsed="8.848132"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:33:36.130111" elapsed="8.855715"/>
+</kw>
+<kw name="Então o título da página deve ficar &quot;Amazon.com.br : Xbox Series S&quot;" owner="base" source_name="Então o título da página deve ficar &quot;${FRASE}&quot;">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>text=${FRASE}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-13T21:33:44.991343" elapsed="1.486054"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:33:44.988302" elapsed="1.490872"/>
+</kw>
+<kw name="E um produto da linha &quot;Xbox Series S&quot; deve ser mostrado na página" owner="base" source_name="E um produto da linha &quot;${PRODUTO}&quot; deve ser mostrado na página">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=(//span[contains(.,'${PRODUTO}')])[3]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-13T21:33:46.484496" elapsed="1.287093"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:33:46.480965" elapsed="1.291313"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:33:48.512402" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-13T21:33:47.788945" elapsed="0.724284"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-13T21:33:48.514130" elapsed="0.539950"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:33:47.782415" elapsed="1.272217"/>
+</kw>
+<doc>Esse teste verifica a busca de um produto</doc>
+<tag>busca_produtos</tag>
+<tag>lista_busca</tag>
+<status status="PASS" start="2025-02-13T21:33:18.696381" elapsed="30.361101"/>
+</test>
+<test id="s1-t3" name="Caso de Teste 03 - Adicionar Produto no Carrinho" line="28">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:33:49.078301" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-13T21:33:49.076085" elapsed="5.694299"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-13T21:33:54.771429" elapsed="0.242781"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:33:49.073606" elapsed="5.941720"/>
+</kw>
+<kw name="Dado que estou na home page da Amazon.com.br" owner="base">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:33:55.025718" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-02-13T21:33:55.022867" elapsed="7.117514"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-13T21:34:02.142054" elapsed="4.882720"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:33:55.019907" elapsed="12.005602"/>
+</kw>
+<kw name="Quando pesquisar pelo produto &quot;Xbox Series S&quot;" owner="base" source_name="Quando pesquisar pelo produto &quot;${PRODUTO}&quot;">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:34:07.033539" level="INFO">Typing text 'Xbox Series S' into text field 'twotabsearchtextbox'.</msg>
+<arg>locator=twotabsearchtextbox</arg>
+<arg>text=${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-13T21:34:07.030579" elapsed="2.583877"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:34:07.028139" elapsed="2.587099"/>
+</kw>
+<kw name="E clicar no botão de pesquisa" owner="base">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:34:09.620597" level="INFO">Clicking element 'nav-search-submit-button'.</msg>
+<arg>locator=nav-search-submit-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-13T21:34:09.619472" elapsed="6.384561"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:34:09.617185" elapsed="6.387396"/>
+</kw>
+<kw name="E adicionar o produto &quot;Console Xbox Series S&quot; no carrinho" owner="base" source_name="E adicionar o produto &quot;${PRODUTO}&quot; no carrinho">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:34:16.010572" level="INFO">Clicking element '//span[@class='a-size-base-plus a-color-base a-text-normal'][contains(.,'Console Xbox Series S')]'.</msg>
+<msg time="2025-02-13T21:34:17.485282" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-13T21:34:17.486156" level="FAIL">Element with locator '//span[@class='a-size-base-plus a-color-base a-text-normal'][contains(.,'Console Xbox Series S')]' not found.</msg>
+<arg>locator=//span[@class='a-size-base-plus a-color-base a-text-normal'][contains(.,'${PRODUTO}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-13T21:34:16.008766" elapsed="1.492698">Element with locator '//span[@class='a-size-base-plus a-color-base a-text-normal'][contains(.,'Console Xbox Series S')]' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${BTN_ADD_CARRINHO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-02-13T21:34:17.502734" elapsed="0.000383"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>locator=${BTN_ADD_CARRINHO}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-13T21:34:17.504362" elapsed="0.000284"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>locator=${NAO_OBRIGADO}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-02-13T21:34:17.505589" elapsed="0.000226"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<arg>Wait Until Element Is Visible</arg>
+<arg>locator=${NAO_OBRIGADO}</arg>
+<arg>timeout=5s</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" start="2025-02-13T21:34:17.506827" elapsed="0.000226"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>locator=${NAO_OBRIGADO}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-13T21:34:17.508084" elapsed="0.000268"/>
+</kw>
+<status status="FAIL" start="2025-02-13T21:34:16.006254" elapsed="1.506142">Element with locator '//span[@class='a-size-base-plus a-color-base a-text-normal'][contains(.,'Console Xbox Series S')]' not found.</status>
+</kw>
+<kw name="Então o produto &quot;Console Xbox Series S&quot; deve ser mostrado no carrinho" owner="base" source_name="Então o produto &quot;${PRODUTO}&quot; deve ser mostrado no carrinho">
+<status status="NOT RUN" start="2025-02-13T21:34:17.514539" elapsed="0.000474"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:34:18.331592" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-13T21:34:17.520527" elapsed="0.811700"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-13T21:34:18.333717" elapsed="0.359941"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:34:17.518395" elapsed="1.175832"/>
+</kw>
+<doc>Esse teste verifica a adição de um produto no carrinho de compras</doc>
+<tag>adicionar_carrinho</tag>
+<status status="FAIL" start="2025-02-13T21:33:49.064725" elapsed="29.631228">Element with locator '//span[@class='a-size-base-plus a-color-base a-text-normal'][contains(.,'Console Xbox Series S')]' not found.</status>
+</test>
+<test id="s1-t4" name="Caso de Teste 04 - Remover Produto do Carrinho" line="37">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:34:18.726386" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-13T21:34:18.720640" elapsed="4.787022"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-13T21:34:23.508227" elapsed="0.132348"/>
+</kw>
+<status status="PASS" start="2025-02-13T21:34:18.716483" elapsed="4.924839"/>
+</kw>
+<kw name="Dado que estou na home page da Amazon.com.br" owner="base">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:34:23.647879" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-02-13T21:34:23.646182" elapsed="2.022260"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:34:31.185014" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=133.0.6943.53)
+Stacktrace:
+#0 0x5d1dd1109bba &lt;unknown&gt;
+#1 0x5d1dd0ba7790 &lt;unknown&gt;
+#2 0x5d1dd0b8d31e &lt;unknown&gt;
+#3 0x5d1dd0bb5d79 &lt;unknown&gt;
+#4 0x5d1dd0c27389 &lt;unknown&gt;
+#5 0x5d1dd0c44639 &lt;unknown&gt;
+#6 0x5d1dd0c1e823 &lt;unknown&gt;
+#7 0x5d1dd0beaa88 &lt;unknown&gt;
+#8 0x5d1dd0bebbf1 &lt;unknown&gt;
+#9 0x5d1dd10d315b &lt;unknown&gt;
+#10 0x5d1dd10d70e2 &lt;unknown&gt;
+#11 0x5d1dd10c001c &lt;unknown&gt;
+#12 0x5d1dd10d7cd4 &lt;unknown&gt;
+#13 0x5d1dd10a448f &lt;unknown&gt;
+#14 0x5d1dd10f84f8 &lt;unknown&gt;
+#15 0x5d1dd10f86c9 &lt;unknown&gt;
+#16 0x5d1dd1108a36 &lt;unknown&gt;
+#17 0x780bb889caa4 &lt;unknown&gt;
+#18 0x780bb8929c3c &lt;unknown&gt;
+</msg>
+<msg time="2025-02-13T21:34:31.189965" level="FAIL">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics']' not visible after 5 seconds.</msg>
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-02-13T21:34:25.669495" elapsed="5.525409">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics']' not visible after 5 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-02-13T21:34:23.643368" elapsed="7.552657">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Quando pesquisar pelo produto &quot;Xbox Series S&quot;" owner="base" source_name="Quando pesquisar pelo produto &quot;${PRODUTO}&quot;">
+<status status="NOT RUN" start="2025-02-13T21:34:31.197965" elapsed="0.000314"/>
+</kw>
+<kw name="E clicar no botão de pesquisa" owner="base">
+<status status="NOT RUN" start="2025-02-13T21:34:31.200154" elapsed="0.000463"/>
+</kw>
+<kw name="E adicionar o produto &quot;Console Xbox Series S&quot; no carrinho" owner="base" source_name="E adicionar o produto &quot;${PRODUTO}&quot; no carrinho">
+<status status="NOT RUN" start="2025-02-13T21:34:31.203595" elapsed="0.000619"/>
+</kw>
+<kw name="Então o produto &quot;Console Xbox Series S&quot; deve ser mostrado no carrinho" owner="base" source_name="Então o produto &quot;${PRODUTO}&quot; deve ser mostrado no carrinho">
+<status status="NOT RUN" start="2025-02-13T21:34:31.206636" elapsed="0.000577"/>
+</kw>
+<kw name="E clicar no Excluir produto" owner="base">
+<status status="NOT RUN" start="2025-02-13T21:34:31.209499" elapsed="0.000506"/>
+</kw>
+<kw name="Então o carrinho deve ficar vazio" owner="base">
+<status status="NOT RUN" start="2025-02-13T21:34:31.212315" elapsed="0.000492"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-13T21:34:31.341875" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+#0 0x5d1dd1109bba &lt;unknown&gt;
+#1 0x5d1dd0ba75e3 &lt;unknown&gt;
+#2 0x5d1dd0be9d3f &lt;unknown&gt;
+#3 0x5d1dd0c1e956 &lt;unknown&gt;
+#4 0x5d1dd0c191b2 &lt;unknown&gt;
+#5 0x5d1dd0c182e5 &lt;unknown&gt;
+#6 0x5d1dd0b702e8 &lt;unknown&gt;
+#7 0x5d1dd10d315b &lt;unknown&gt;
+#8 0x5d1dd10d70e2 &lt;unknown&gt;
+#9 0x5d1dd10c001c &lt;unknown&gt;
+#10 0x5d1dd10d7cd4 &lt;unknown&gt;
+#11 0x5d1dd10a448f &lt;unknown&gt;
+#12 0x5d1dd0b6ed32 &lt;unknown&gt;
+#13 0x780bb882a1ca &lt;unknown&gt;
+#14 0x780bb882a28b __libc_start_main
+#15 0x5d1dd0b3772a _start
+</msg>
+<msg time="2025-02-13T21:34:31.346203" level="FAIL">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+#0 0x5d1dd1109bba &lt;unknown&gt;
+#1 0x5d1dd0ba75e3 &lt;unknown&gt;
+#2 0x5d1dd0be9d3f &lt;unknown&gt;
+#3 0x5d1dd0c1e956 &lt;unknown&gt;
+#4 0x5d1dd0c191b2 &lt;unknown&gt;
+#5 0x5d1dd0c182e5 &lt;unknown&gt;
+#6 0x5d1dd0b702e8 &lt;unknown&gt;
+#7 0x5d1dd10d315b &lt;unknown&gt;
+#8 0x5d1dd10d70e2 &lt;unknown&gt;
+#9 0x5d1dd10c001c &lt;unknown&gt;
+#10 0x5d1dd10d7cd4 &lt;unknown&gt;
+#11 0x5d1dd10a448f &lt;unknown&gt;
+#12 0x5d1dd0b6ed32 &lt;unknown&gt;
+#13 0x780bb882a1ca &lt;unknown&gt;
+#14 0x780bb882a28b __libc_start_main
+#15 0x5d1dd0b3772a _start
+</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="FAIL" start="2025-02-13T21:34:31.220393" elapsed="0.150491">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+#0 0x5d1dd1109bba &lt;unknown&gt;
+#1 0x5d1dd0ba75e3 &lt;unknown&gt;
+#2 0x5d1dd0be9d3f &lt;unknown&gt;
+#3 0x5d1dd0c1e956 &lt;unknown&gt;
+#4 0x5d1dd0c191b2 &lt;unknown&gt;
+#5 0x5d1dd0c182e5 &lt;unknown&gt;
+#6 0x5d1dd0b702e8 &lt;unknown&gt;
+#7 0x5d1dd10d315b &lt;unknown&gt;
+#8 0x5d1dd10d70e2 &lt;unknown&gt;
+#9 0x5d1dd10c001c &lt;unknown&gt;
+#10 0x5d1dd10d7cd4 &lt;unknown&gt;
+#11 0x5d1dd10a448f &lt;unknown&gt;
+#12 0x5d1dd0b6ed32 &lt;unknown&gt;
+#13 0x780bb882a1ca &lt;unknown&gt;
+#14 0x780bb882a28b __libc_start_main
+#15 0x5d1dd0b3772a _start
+</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-13T21:34:31.371818" elapsed="1.017491"/>
+</kw>
+<status status="FAIL" start="2025-02-13T21:34:31.216379" elapsed="1.173746">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+#0 0x5d1dd1109bba &lt;unknown&gt;
+#1 0x5d1dd0ba75e3 &lt;unknown&gt;
+#2 0x5d1dd0be9d3f &lt;unknown&gt;
+#3 0x5d1dd0c1e956 &lt;unknown&gt;
+#4 0x5d1dd0c191b2 &lt;unknown&gt;
+#5 0x5d1dd0c182e5 &lt;unknown&gt;
+#6 0x5d1dd0b702e8 &lt;unknown&gt;
+#7 0x5d1dd10d315b &lt;unknown&gt;
+#8 0x5d1dd10d70e2 &lt;unknown&gt;
+#9 0x5d1dd10c001c &lt;unknown&gt;
+#10 0x5d1dd10d7cd4 &lt;unknown&gt;
+#11 0x5d1dd10a448f &lt;unknown&gt;
+#12 0x5d1dd0b6ed32 &lt;unknown&gt;
+#13 0x780bb882a1ca &lt;unknown&gt;
+#14 0x780bb882a28b __libc_start_main
+#15 0x5d1dd0b3772a _start
+</status>
+</kw>
+<doc>Esse teste verifica a remoção de um produto no carrinho de compras</doc>
+<tag>remover_carrinho</tag>
+<status status="FAIL" start="2025-02-13T21:34:18.705911" elapsed="13.684893">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics']' not visible after 5 seconds.
+
+Also teardown failed:
+InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+#0 0x5d1dd1109bba &lt;unknown&gt;
+#1 0x5d1dd0ba75e3 &lt;unknown&gt;
+#2 0x5d1dd0be9d3f &lt;unknown&gt;
+#3 0x5d1dd0c1e956 &lt;unknown&gt;
+#4 0x5d1dd0c191b2 &lt;unknown&gt;
+#5 0x5d1dd0c182e5 &lt;unknown&gt;
+#6 0x5d1dd0b702e8 &lt;unknown&gt;
+#7 0x5d1dd10d315b &lt;unknown&gt;
+#8 0x5d1dd10d70e2 &lt;unknown&gt;
+#9 0x5d1dd10c001c &lt;unknown&gt;
+#10 0x5d1dd10d7cd4 &lt;unknown&gt;
+#11 0x5d1dd10a448f &lt;unknown&gt;
+#12 0x5d1dd0b6ed32 &lt;unknown&gt;
+#13 0x780bb882a1ca &lt;unknown&gt;
+#14 0x780bb882a28b __libc_start_main
+#15 0x5d1dd0b3772a _start
+</status>
+</test>
+<doc>Essa suíte testa o site da Amazon.com.br</doc>
+<status status="FAIL" start="2025-02-13T21:32:41.618532" elapsed="110.775457"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">adicionar_carrinho</stat>
+<stat pass="1" fail="0" skip="0">busca_produtos</stat>
+<stat pass="1" fail="0" skip="0">lista_busca</stat>
+<stat pass="0" fail="1" skip="0">menus_categorias</stat>
+<stat pass="0" fail="1" skip="0">remover_carrinho</stat>
+</tag>
+<suite>
+<stat pass="1" fail="3" skip="0" id="s1" name="Amazon Test Bdd">Amazon Test Bdd</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-02-13T21:34:31.185014" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=133.0.6943.53)
+Stacktrace:
+#0 0x5d1dd1109bba &lt;unknown&gt;
+#1 0x5d1dd0ba7790 &lt;unknown&gt;
+#2 0x5d1dd0b8d31e &lt;unknown&gt;
+#3 0x5d1dd0bb5d79 &lt;unknown&gt;
+#4 0x5d1dd0c27389 &lt;unknown&gt;
+#5 0x5d1dd0c44639 &lt;unknown&gt;
+#6 0x5d1dd0c1e823 &lt;unknown&gt;
+#7 0x5d1dd0beaa88 &lt;unknown&gt;
+#8 0x5d1dd0bebbf1 &lt;unknown&gt;
+#9 0x5d1dd10d315b &lt;unknown&gt;
+#10 0x5d1dd10d70e2 &lt;unknown&gt;
+#11 0x5d1dd10c001c &lt;unknown&gt;
+#12 0x5d1dd10d7cd4 &lt;unknown&gt;
+#13 0x5d1dd10a448f &lt;unknown&gt;
+#14 0x5d1dd10f84f8 &lt;unknown&gt;
+#15 0x5d1dd10f86c9 &lt;unknown&gt;
+#16 0x5d1dd1108a36 &lt;unknown&gt;
+#17 0x780bb889caa4 &lt;unknown&gt;
+#18 0x780bb8929c3c &lt;unknown&gt;
+</msg>
+<msg time="2025-02-13T21:34:31.341875" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+#0 0x5d1dd1109bba &lt;unknown&gt;
+#1 0x5d1dd0ba75e3 &lt;unknown&gt;
+#2 0x5d1dd0be9d3f &lt;unknown&gt;
+#3 0x5d1dd0c1e956 &lt;unknown&gt;
+#4 0x5d1dd0c191b2 &lt;unknown&gt;
+#5 0x5d1dd0c182e5 &lt;unknown&gt;
+#6 0x5d1dd0b702e8 &lt;unknown&gt;
+#7 0x5d1dd10d315b &lt;unknown&gt;
+#8 0x5d1dd10d70e2 &lt;unknown&gt;
+#9 0x5d1dd10c001c &lt;unknown&gt;
+#10 0x5d1dd10d7cd4 &lt;unknown&gt;
+#11 0x5d1dd10a448f &lt;unknown&gt;
+#12 0x5d1dd0b6ed32 &lt;unknown&gt;
+#13 0x780bb882a1ca &lt;unknown&gt;
+#14 0x780bb882a28b __libc_start_main
+#15 0x5d1dd0b3772a _start
+</msg>
+</errors>
+</robot>

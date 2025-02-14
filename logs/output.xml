@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on linux)" generated="2025-01-23T09:09:52.939483" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/home/nunes/robot-amazon/tests">
+<suite id="s1-s1" name="Amazon Test" source="/home/nunes/robot-amazon/tests/amazon_test.robot">
+<test id="s1-s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="9">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:09:53.317023" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-23T09:09:53.316644" elapsed="2.735711"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-23T09:09:56.052922" elapsed="0.023982"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:09:53.315498" elapsed="2.761907"/>
+</kw>
+<kw name="Acessar a home page do site Amazon.com.br">
+<msg time="2025-01-23T09:09:56.088910" level="FAIL">No keyword with name 'Acessar a home page do site Amazon.com.br' found.</msg>
+<status status="FAIL" start="2025-01-23T09:09:56.088698" elapsed="0.000391">No keyword with name 'Acessar a home page do site Amazon.com.br' found.</status>
+</kw>
+<kw name="Verificar se o título da página fica &quot;Amazon.com.br | Tudo pra você, de A a Z.&quot;">
+<status status="NOT RUN" start="2025-01-23T09:09:56.090028" elapsed="0.000128"/>
+</kw>
+<kw name="Entrar no menu &quot;Eletrônicos&quot;">
+<status status="NOT RUN" start="2025-01-23T09:09:56.090937" elapsed="0.000115"/>
+</kw>
+<kw name="Verificar se aparece a frase &quot;Eletrônicos e Tecnologia&quot;">
+<status status="NOT RUN" start="2025-01-23T09:09:56.091665" elapsed="0.000163"/>
+</kw>
+<kw name="Verificar se o título da página fica &quot;Eletrônicos e Tecnologia | Amazon.com.br&quot;">
+<status status="NOT RUN" start="2025-01-23T09:09:56.092762" elapsed="0.000189"/>
+</kw>
+<kw name="Verificar se aparece a categoria &quot;Computadores e Informática&quot;">
+<status status="NOT RUN" start="2025-01-23T09:09:56.093648" elapsed="0.000166"/>
+</kw>
+<kw name="Verificar se aparece a categoria &quot;Tablets&quot;">
+<status status="NOT RUN" start="2025-01-23T09:09:56.094671" elapsed="0.000119"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:09:56.284060" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-01-23T09:09:56.097016" elapsed="0.187284"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-23T09:09:56.284806" elapsed="0.233884"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:09:56.095926" elapsed="0.423010"/>
+</kw>
+<doc>Esse teste verifica o menu eletrônicos do site da Amazon.com.br
+e verifica a categoria Computadores e Informática</doc>
+<tag>categorias</tag>
+<tag>menus</tag>
+<status status="FAIL" start="2025-01-23T09:09:53.314287" elapsed="3.205061">No keyword with name 'Acessar a home page do site Amazon.com.br' found.</status>
+</test>
+<test id="s1-s1-t2" name="Caso de Teste 02 - Pesquisa de um Produto" line="21">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:09:56.523388" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-23T09:09:56.522842" elapsed="1.719060"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-23T09:09:58.242531" elapsed="0.086918"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:09:56.522259" elapsed="1.808710"/>
+</kw>
+<kw name="Acessar a home page do site Amazon.com.br">
+<msg time="2025-01-23T09:09:58.344714" level="FAIL">No keyword with name 'Acessar a home page do site Amazon.com.br' found.</msg>
+<status status="FAIL" start="2025-01-23T09:09:58.344571" elapsed="0.000285">No keyword with name 'Acessar a home page do site Amazon.com.br' found.</status>
+</kw>
+<kw name="Digitar o nome de produto &quot;Xbox Series S&quot; no campo de pesquisa">
+<status status="NOT RUN" start="2025-01-23T09:09:58.346653" elapsed="0.000174"/>
+</kw>
+<kw name="Clicar no botão de pesquisa">
+<status status="NOT RUN" start="2025-01-23T09:09:58.347561" elapsed="0.000155"/>
+</kw>
+<kw name="Verificar o resultado da pesquisa se está listando o produto &quot;Console Xbox Series S&quot;">
+<status status="NOT RUN" start="2025-01-23T09:09:58.351485" elapsed="0.000181"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:09:58.503584" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-01-23T09:09:58.354408" elapsed="0.149565"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-23T09:09:58.504517" elapsed="0.116637"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:09:58.352908" elapsed="0.268556"/>
+</kw>
+<doc>Esse teste verifica a busca de um produto</doc>
+<tag>busca_produtos</tag>
+<tag>lista_busca</tag>
+<status status="FAIL" start="2025-01-23T09:09:56.520540" elapsed="2.101228">No keyword with name 'Acessar a home page do site Amazon.com.br' found.</status>
+</test>
+<test id="s1-s1-t3" name="Caso de Teste 03 - Adicionar Produto no Carrinho" line="29">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:09:58.628889" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-23T09:09:58.627877" elapsed="1.748809"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-23T09:10:00.377155" elapsed="0.021349"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:09:58.625841" elapsed="1.772950"/>
+</kw>
+<kw name="Acessar a home page do site Amazon.com.br">
+<msg time="2025-01-23T09:10:00.407215" level="FAIL">No keyword with name 'Acessar a home page do site Amazon.com.br' found.</msg>
+<status status="FAIL" start="2025-01-23T09:10:00.406929" elapsed="0.000514">No keyword with name 'Acessar a home page do site Amazon.com.br' found.</status>
+</kw>
+<kw name="Digitar o nome de produto &quot;Xbox Series S&quot; no campo de pesquisa">
+<status status="NOT RUN" start="2025-01-23T09:10:00.408373" elapsed="0.000147"/>
+</kw>
+<kw name="Clicar no botão de pesquisa">
+<status status="NOT RUN" start="2025-01-23T09:10:00.409210" elapsed="0.000449"/>
+</kw>
+<kw name="Verificar o resultado da pesquisa se está listando o produto &quot;Console Xbox Series S&quot;">
+<status status="NOT RUN" start="2025-01-23T09:10:00.411203" elapsed="0.000150"/>
+</kw>
+<kw name="Adicionar o produto &quot;Console Xbox Series S&quot; no carrinho">
+<status status="NOT RUN" start="2025-01-23T09:10:00.412080" elapsed="0.000129"/>
+</kw>
+<kw name="Verificar se o produto &quot;Console Xbox Series S&quot; foi adicionado com sucesso">
+<status status="NOT RUN" start="2025-01-23T09:10:00.412876" elapsed="0.000120"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:00.615744" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-01-23T09:10:00.415820" elapsed="0.200529"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-23T09:10:00.617720" elapsed="0.104469"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:10:00.414764" elapsed="0.307837"/>
+</kw>
+<doc>Esse teste verifica a adição de um produto no carrinho de compras</doc>
+<tag>adicionar_carrinho</tag>
+<status status="FAIL" start="2025-01-23T09:09:58.622887" elapsed="2.101414">No keyword with name 'Acessar a home page do site Amazon.com.br' found.</status>
+</test>
+<test id="s1-s1-t4" name="Caso de Teste 04 - Remover Produto do Carrinho" line="39">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:00.738346" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-23T09:10:00.736894" elapsed="1.697381"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-23T09:10:02.434795" elapsed="0.079858"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:10:00.735969" elapsed="1.779027"/>
+</kw>
+<kw name="Acessar a home page do site Amazon.com.br">
+<msg time="2025-01-23T09:10:02.526587" level="FAIL">No keyword with name 'Acessar a home page do site Amazon.com.br' found.</msg>
+<status status="FAIL" start="2025-01-23T09:10:02.526395" elapsed="0.000372">No keyword with name 'Acessar a home page do site Amazon.com.br' found.</status>
+</kw>
+<kw name="Digitar o nome de produto &quot;Xbox Series S&quot; no campo de pesquisa">
+<status status="NOT RUN" start="2025-01-23T09:10:02.527594" elapsed="0.000137"/>
+</kw>
+<kw name="Clicar no botão de pesquisa">
+<status status="NOT RUN" start="2025-01-23T09:10:02.529139" elapsed="0.000198"/>
+</kw>
+<kw name="Verificar o resultado da pesquisa se está listando o produto &quot;Console Xbox Series S&quot;">
+<status status="NOT RUN" start="2025-01-23T09:10:02.531395" elapsed="0.000170"/>
+</kw>
+<kw name="Adicionar o produto &quot;Console Xbox Series S&quot; no carrinho">
+<status status="NOT RUN" start="2025-01-23T09:10:02.535636" elapsed="0.000163"/>
+</kw>
+<kw name="Verificar se o produto &quot;Console Xbox Series S&quot; foi adicionado com sucesso">
+<status status="NOT RUN" start="2025-01-23T09:10:02.536916" elapsed="0.000140"/>
+</kw>
+<kw name="Remover o produto &quot;Console Xbox Series S&quot; do carrinho">
+<status status="NOT RUN" start="2025-01-23T09:10:02.538179" elapsed="0.000128"/>
+</kw>
+<kw name="Verificar se o carrinho fica vazio">
+<status status="NOT RUN" start="2025-01-23T09:10:02.538926" elapsed="0.000098"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:02.785700" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-01-23T09:10:02.540966" elapsed="0.245145"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-23T09:10:02.787036" elapsed="0.167117"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:10:02.540007" elapsed="0.416864"/>
+</kw>
+<doc>Esse teste verifica a remoção de um produto no carrinho de compras</doc>
+<tag>remover_carrinho</tag>
+<status status="FAIL" start="2025-01-23T09:10:00.730463" elapsed="2.229463">No keyword with name 'Acessar a home page do site Amazon.com.br' found.</status>
+</test>
+<doc>Essa suíte testa o site da Amazon.com.br</doc>
+<status status="FAIL" start="2025-01-23T09:09:52.990687" elapsed="9.976310"/>
+</suite>
+<suite id="s1-s2" name="Amazon Test Bdd" source="/home/nunes/robot-amazon/tests/amazon_test_bdd.robot">
+<test id="s1-s2-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="9">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:02.990509" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-23T09:10:02.989749" elapsed="1.731678"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-23T09:10:04.721927" elapsed="0.020923"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:10:02.988606" elapsed="1.754671"/>
+</kw>
+<kw name="Dado que estou na home page da Amazon.com.br" owner="base">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:04.746357" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-01-23T09:10:04.745573" elapsed="2.059319"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-23T09:10:06.805466" elapsed="1.199090"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:10:04.744392" elapsed="3.260380"/>
+</kw>
+<kw name="Quando acessar o menu &quot;Eletrônicos&quot;" owner="base">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:08.006660" level="INFO">Clicking element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics']'.</msg>
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-23T09:10:08.006130" elapsed="4.823341"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:10:08.005389" elapsed="4.824469"/>
+</kw>
+<kw name="Então o título da página deve ficar &quot;Eletrônicos e Tecnologia | Amazon.com.br&quot;" owner="base" source_name="Então o título da página deve ficar &quot;${FRASE}&quot;">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>text=${FRASE}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-23T09:10:12.831899" elapsed="0.419866"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:10:12.830701" elapsed="0.421444"/>
+</kw>
+<kw name="E o texto &quot;Até 25% off em Eletrônicos e TVs | Esquenta Black Friday&quot; deve ser exibido na página" owner="base">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:18.738208" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-23T09:10:18.738454" level="FAIL">Element '//h1[contains(.,'Até 25% off em Eletrônicos e TVs | Esquenta Black Friday')]' not visible after 5 seconds.</msg>
+<arg>locator=${HEADER_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-01-23T09:10:13.254538" elapsed="5.489239">Element '//h1[contains(.,'Até 25% off em Eletrônicos e TVs | Esquenta Black Friday')]' not visible after 5 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-01-23T09:10:13.253538" elapsed="5.490549">Element '//h1[contains(.,'Até 25% off em Eletrônicos e TVs | Esquenta Black Friday')]' not visible after 5 seconds.</status>
+</kw>
+<kw name="E a categoria &quot;Computadores e Informática&quot; deve ser exibida na página" owner="base" source_name="E a categoria &quot;${NOME_CATEGORIA}&quot; deve ser exibida na página">
+<status status="NOT RUN" start="2025-01-23T09:10:18.744627" elapsed="0.000176"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:19.029360" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-01-23T09:10:18.745888" elapsed="0.283807"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-23T09:10:19.030263" elapsed="0.219617"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:10:18.745355" elapsed="0.504926"/>
+</kw>
+<doc>Esse teste verifica o menu eletrônicos do site da Amazon.com.br
+e verifica a categoria Computadores e Informática</doc>
+<tag>menus_categorias</tag>
+<status status="FAIL" start="2025-01-23T09:10:02.986549" elapsed="16.264507">Element '//h1[contains(.,'Até 25% off em Eletrônicos e TVs | Esquenta Black Friday')]' not visible after 5 seconds.</status>
+</test>
+<test id="s1-s2-t2" name="Caso de Teste 02 - Pesquisa de um Produto" line="19">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:19.259195" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-23T09:10:19.258478" elapsed="1.647552"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-23T09:10:20.906663" elapsed="0.069508"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:10:19.256911" elapsed="1.719891"/>
+</kw>
+<kw name="Dado que estou na home page da Amazon.com.br" owner="base">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:20.981248" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-01-23T09:10:20.980573" elapsed="2.536490"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-23T09:10:23.517723" elapsed="1.809828"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:10:20.978472" elapsed="4.349487"/>
+</kw>
+<kw name="Quando pesquisar pelo produto &quot;Xbox Series S&quot;" owner="base" source_name="Quando pesquisar pelo produto &quot;${PRODUTO}&quot;">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:25.360117" level="INFO">Typing text 'Xbox Series S' into text field 'twotabsearchtextbox'.</msg>
+<arg>locator=twotabsearchtextbox</arg>
+<arg>text=${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-23T09:10:25.344425" elapsed="0.922378"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:10:25.340853" elapsed="0.926160"/>
+</kw>
+<kw name="E clicar no botão de pesquisa" owner="base">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:26.268587" level="INFO">Clicking element 'nav-search-submit-button'.</msg>
+<msg time="2025-01-23T09:10:28.715452" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+#0 0x6079035fc1fa &lt;unknown&gt;
+#1 0x60790310c810 &lt;unknown&gt;
+#2 0x6079030f3555 &lt;unknown&gt;
+#3 0x6079030f3433 &lt;unknown&gt;
+#4 0x60790310eb32 &lt;unknown&gt;
+#5 0x60790319d9e6 &lt;unknown&gt;
+#6 0x60790317f323 &lt;unknown&gt;
+#7 0x60790314dde0 &lt;unknown&gt;
+#8 0x60790314edbe &lt;unknown&gt;
+#9 0x6079035c812b &lt;unknown&gt;
+#10 0x6079035cc0c7 &lt;unknown&gt;
+#11 0x6079035b56cc &lt;unknown&gt;
+#12 0x6079035ccc47 &lt;unknown&gt;
+#13 0x60790359a67f &lt;unknown&gt;
+#14 0x6079035eb288 &lt;unknown&gt;
+#15 0x6079035eb450 &lt;unknown&gt;
+#16 0x6079035fb076 &lt;unknown&gt;
+#17 0x7b366da9ca94 &lt;unknown&gt;
+#18 0x7b366db29c3c &lt;unknown&gt;
+</msg>
+<msg time="2025-01-23T09:10:28.715861" level="FAIL">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+#0 0x6079035fc1fa &lt;unknown&gt;
+#1 0x60790310c66d &lt;unknown&gt;
+#2 0x6079030f4772 &lt;unknown&gt;
+#3 0x6079030f27e6 &lt;unknown&gt;
+#4 0x6079030f2fcf &lt;unknown&gt;
+#5 0x607903102877 &lt;unknown&gt;
+#6 0x607903119664 &lt;unknown&gt;
+#7 0x60790311f4fb &lt;unknown&gt;
+#8 0x6079030f36d7 &lt;unknown&gt;
+#9 0x6079031191c1 &lt;unknown&gt;
+#10 0x60790319e386 &lt;unknown&gt;
+#11 0x60790317f323 &lt;unknown&gt;
+#12 0x60790314dde0 &lt;unknown&gt;
+#13 0x60790314edbe &lt;unknown&gt;
+#14 0x6079035c812b &lt;unknown&gt;
+#15 0x6079035cc0c7 &lt;unknown&gt;
+#16 0x6079035b56cc &lt;unknown&gt;
+#17 0x6079035ccc47 &lt;unknown&gt;
+#18 0x60790359a67f &lt;unknown&gt;
+#19 0x6079035eb288 &lt;unknown&gt;
+#20 0x6079035eb450 &lt;unknown&gt;
+#21 0x6079035fb076 &lt;unknown&gt;
+#22 0x7b366da9ca94 &lt;unknown&gt;
+#23 0x7b366db29c3c &lt;unknown&gt;
+</msg>
+<arg>locator=nav-search-submit-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-01-23T09:10:26.268226" elapsed="2.452384">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+#0 0x6079035fc1fa &lt;unknown&gt;
+#1 0x60790310c66d &lt;unknown&gt;
+#2 0x6079030f4772 &lt;unknown&gt;
+#3 0x6079030f27e6 &lt;unknown&gt;
+#4 0x6079030f2fcf &lt;unknown&gt;
+#5 0x607903102877 &lt;unknown&gt;
+#6 0x607903119664 &lt;unknown&gt;
+#7 0x60790311f4fb &lt;unknown&gt;
+#8 0x6079030f36d7 &lt;unknown&gt;
+#9 0x6079031191c1 &lt;unknown&gt;
+#10 0x60790319e386 &lt;unknown&gt;
+#11 0x60790317f323 &lt;unknown&gt;
+#12 0x60790314dde0 &lt;unknown&gt;
+#13 0x60790314edbe &lt;unknown&gt;
+#14 0x6079035c812b &lt;unknown&gt;
+#15 0x6079035cc0c7 &lt;unknown&gt;
+#16 0x6079035b56cc &lt;unknown&gt;
+#17 0x6079035ccc47 &lt;unknown&gt;
+#18 0x60790359a67f &lt;unknown&gt;
+#19 0x6079035eb288 &lt;unknown&gt;
+#20 0x6079035eb450 &lt;unknown&gt;
+#21 0x6079035fb076 &lt;unknown&gt;
+#22 0x7b366da9ca94 &lt;unknown&gt;
+#23 0x7b366db29c3c &lt;unknown&gt;
+</status>
+</kw>
+<status status="FAIL" start="2025-01-23T09:10:26.267639" elapsed="2.453240">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+#0 0x6079035fc1fa &lt;unknown&gt;
+#1 0x60790310c66d &lt;unknown&gt;
+#2 0x6079030f4772 &lt;unknown&gt;
+#3 0x6079030f27e6 &lt;unknown&gt;
+#4 0x6079030f2fcf &lt;unknown&gt;
+#5 0x607903102877 &lt;unknown&gt;
+#6 0x607903119664 &lt;unknown&gt;
+#7 0x60790311f4fb &lt;unknown&gt;
+#8 0x6079030f36d7 &lt;unknown&gt;
+#9 0x6079031191c1 &lt;unknown&gt;
+#10 0x60790319e386 &lt;unknown&gt;
+#11 0x60790317f323 &lt;unknown&gt;
+#12 0x60790314dde0 &lt;unknown&gt;
+#13 0x60790314edbe &lt;unknown&gt;
+#14 0x6079035c812b &lt;unknown&gt;
+#15 0x6079035cc0c7 &lt;unknown&gt;
+#16 0x6079035b56cc &lt;unknown&gt;
+#17 0x6079035ccc47 &lt;unknown&gt;
+#18 0x60790359a67f &lt;unknown&gt;
+#19 0x6079035eb288 &lt;unknown&gt;
+#20 0x6079035eb450 &lt;unknown&gt;
+#21 0x6079035fb076 &lt;unknown&gt;
+#22 0x7b366da9ca94 &lt;unknown&gt;
+#23 0x7b366db29c3c &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Então o título da página deve ficar &quot;Amazon.com.br : Xbox Series S&quot;" owner="base" source_name="Então o título da página deve ficar &quot;${FRASE}&quot;">
+<status status="NOT RUN" start="2025-01-23T09:10:28.721457" elapsed="0.000202"/>
+</kw>
+<kw name="E um produto da linha &quot;Xbox Series S&quot; deve ser mostrado na página" owner="base" source_name="E um produto da linha &quot;${PRODUTO}&quot; deve ser mostrado na página">
+<status status="NOT RUN" start="2025-01-23T09:10:28.722358" elapsed="0.000123"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:28.819867" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+#0 0x6079035fc1fa &lt;unknown&gt;
+#1 0x60790310c810 &lt;unknown&gt;
+#2 0x6079030f3555 &lt;unknown&gt;
+#3 0x6079030f3433 &lt;unknown&gt;
+#4 0x60790310eb32 &lt;unknown&gt;
+#5 0x60790319d9e6 &lt;unknown&gt;
+#6 0x60790317f323 &lt;unknown&gt;
+#7 0x60790314dde0 &lt;unknown&gt;
+#8 0x60790314edbe &lt;unknown&gt;
+#9 0x6079035c812b &lt;unknown&gt;
+#10 0x6079035cc0c7 &lt;unknown&gt;
+#11 0x6079035b56cc &lt;unknown&gt;
+#12 0x6079035ccc47 &lt;unknown&gt;
+#13 0x60790359a67f &lt;unknown&gt;
+#14 0x6079035eb288 &lt;unknown&gt;
+#15 0x6079035eb450 &lt;unknown&gt;
+#16 0x6079035fb076 &lt;unknown&gt;
+#17 0x7b366da9ca94 &lt;unknown&gt;
+#18 0x7b366db29c3c &lt;unknown&gt;
+</msg>
+<msg time="2025-01-23T09:10:28.820364" level="FAIL">WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+#0 0x6079035fc1fa &lt;unknown&gt;
+#1 0x60790310c810 &lt;unknown&gt;
+#2 0x6079030f3555 &lt;unknown&gt;
+#3 0x6079030f3433 &lt;unknown&gt;
+#4 0x60790310eb32 &lt;unknown&gt;
+#5 0x60790319d9e6 &lt;unknown&gt;
+#6 0x60790317f323 &lt;unknown&gt;
+#7 0x60790314dde0 &lt;unknown&gt;
+#8 0x60790314edbe &lt;unknown&gt;
+#9 0x6079035c812b &lt;unknown&gt;
+#10 0x6079035cc0c7 &lt;unknown&gt;
+#11 0x6079035b56cc &lt;unknown&gt;
+#12 0x6079035ccc47 &lt;unknown&gt;
+#13 0x60790359a67f &lt;unknown&gt;
+#14 0x6079035eb288 &lt;unknown&gt;
+#15 0x6079035eb450 &lt;unknown&gt;
+#16 0x6079035fb076 &lt;unknown&gt;
+#17 0x7b366da9ca94 &lt;unknown&gt;
+#18 0x7b366db29c3c &lt;unknown&gt;
+</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="FAIL" start="2025-01-23T09:10:28.724286" elapsed="0.098914">WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+#0 0x6079035fc1fa &lt;unknown&gt;
+#1 0x60790310c810 &lt;unknown&gt;
+#2 0x6079030f3555 &lt;unknown&gt;
+#3 0x6079030f3433 &lt;unknown&gt;
+#4 0x60790310eb32 &lt;unknown&gt;
+#5 0x60790319d9e6 &lt;unknown&gt;
+#6 0x60790317f323 &lt;unknown&gt;
+#7 0x60790314dde0 &lt;unknown&gt;
+#8 0x60790314edbe &lt;unknown&gt;
+#9 0x6079035c812b &lt;unknown&gt;
+#10 0x6079035cc0c7 &lt;unknown&gt;
+#11 0x6079035b56cc &lt;unknown&gt;
+#12 0x6079035ccc47 &lt;unknown&gt;
+#13 0x60790359a67f &lt;unknown&gt;
+#14 0x6079035eb288 &lt;unknown&gt;
+#15 0x6079035eb450 &lt;unknown&gt;
+#16 0x6079035fb076 &lt;unknown&gt;
+#17 0x7b366da9ca94 &lt;unknown&gt;
+#18 0x7b366db29c3c &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-23T09:10:28.823529" elapsed="0.053169"/>
+</kw>
+<status status="FAIL" start="2025-01-23T09:10:28.723378" elapsed="0.153628">WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+#0 0x6079035fc1fa &lt;unknown&gt;
+#1 0x60790310c810 &lt;unknown&gt;
+#2 0x6079030f3555 &lt;unknown&gt;
+#3 0x6079030f3433 &lt;unknown&gt;
+#4 0x60790310eb32 &lt;unknown&gt;
+#5 0x60790319d9e6 &lt;unknown&gt;
+#6 0x60790317f323 &lt;unknown&gt;
+#7 0x60790314dde0 &lt;unknown&gt;
+#8 0x60790314edbe &lt;unknown&gt;
+#9 0x6079035c812b &lt;unknown&gt;
+#10 0x6079035cc0c7 &lt;unknown&gt;
+#11 0x6079035b56cc &lt;unknown&gt;
+#12 0x6079035ccc47 &lt;unknown&gt;
+#13 0x60790359a67f &lt;unknown&gt;
+#14 0x6079035eb288 &lt;unknown&gt;
+#15 0x6079035eb450 &lt;unknown&gt;
+#16 0x6079035fb076 &lt;unknown&gt;
+#17 0x7b366da9ca94 &lt;unknown&gt;
+#18 0x7b366db29c3c &lt;unknown&gt;
+</status>
+</kw>
+<doc>Esse teste verifica a busca de um produto</doc>
+<tag>busca_produtos</tag>
+<tag>lista_busca</tag>
+<status status="FAIL" start="2025-01-23T09:10:19.255156" elapsed="9.622075">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+#0 0x6079035fc1fa &lt;unknown&gt;
+#1 0x60790310c66d &lt;unknown&gt;
+#2 0x6079030f4772 &lt;unknown&gt;
+#3 0x6079030f27e6 &lt;unknown&gt;
+#4 0x6079030f2fcf &lt;unknown&gt;
+#5 0x607903102877 &lt;unknown&gt;
+#6 0x607903119664 &lt;unknown&gt;
+#7 0x60790311f4fb &lt;unknown&gt;
+#8 0x6079030f36d7 &lt;unknown&gt;
+#9 0x6079031191c1 &lt;unknown&gt;
+#10 0x60790319e386 &lt;unknown&gt;
+#11 0x60790317f323 &lt;unknown&gt;
+#12 0x60790314dde0 &lt;unknown&gt;
+#13 0x60790314edbe &lt;unknown&gt;
+#14 0x6079035c812b &lt;unknown&gt;
+#15 0x6079035cc0c7 &lt;unknown&gt;
+#16 0x6079035b56cc &lt;unknown&gt;
+#17 0x6079035ccc47 &lt;unknown&gt;
+#18 0x60790359a67f &lt;unknown&gt;
+#19 0x6079035eb288 &lt;unknown&gt;
+#20 0x6079035eb450 &lt;unknown&gt;
+#21 0x6079035fb076 &lt;unknown&gt;
+#22 0x7b366da9ca94 &lt;unknown&gt;
+#23 0x7b366db29c3c &lt;unknown&gt;
+
+
+Also teardown failed:
+WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+#0 0x6079035fc1fa &lt;unknown&gt;
+#1 0x60790310c810 &lt;unknown&gt;
+#2 0x6079030f3555 &lt;unknown&gt;
+#3 0x6079030f3433 &lt;unknown&gt;
+#4 0x60790310eb32 &lt;unknown&gt;
+#5 0x60790319d9e6 &lt;unknown&gt;
+#6 0x60790317f323 &lt;unknown&gt;
+#7 0x60790314dde0 &lt;unknown&gt;
+#8 0x60790314edbe &lt;unknown&gt;
+#9 0x6079035c812b &lt;unknown&gt;
+#10 0x6079035cc0c7 &lt;unknown&gt;
+#11 0x6079035b56cc &lt;unknown&gt;
+#12 0x6079035ccc47 &lt;unknown&gt;
+#13 0x60790359a67f &lt;unknown&gt;
+#14 0x6079035eb288 &lt;unknown&gt;
+#15 0x6079035eb450 &lt;unknown&gt;
+#16 0x6079035fb076 &lt;unknown&gt;
+#17 0x7b366da9ca94 &lt;unknown&gt;
+#18 0x7b366db29c3c &lt;unknown&gt;
+</status>
+</test>
+<test id="s1-s2-t3" name="Caso de Teste 03 - Adicionar Produto no Carrinho" line="28">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:28.879887" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-23T09:10:28.879532" elapsed="1.460138"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-23T09:10:30.340216" elapsed="0.071413"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:10:28.878952" elapsed="1.532897"/>
+</kw>
+<kw name="Dado que estou na home page da Amazon.com.br" owner="base">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:30.413656" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-01-23T09:10:30.413191" elapsed="3.056787"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-23T09:10:33.470659" elapsed="0.213005"/>
+</kw>
+<status status="PASS" start="2025-01-23T09:10:30.412634" elapsed="3.271520"/>
+</kw>
+<kw name="Quando pesquisar pelo produto &quot;Xbox Series S&quot;" owner="base" source_name="Quando pesquisar pelo produto &quot;${PRODUTO}&quot;">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:33.687666" level="INFO">Typing text 'Xbox Series S' into text field 'twotabsearchtextbox'.</msg>
+<msg time="2025-01-23T09:10:34.808745" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+#0 0x57184fab11fa &lt;unknown&gt;
+#1 0x57184f5c1810 &lt;unknown&gt;
+#2 0x57184f5a8555 &lt;unknown&gt;
+#3 0x57184f5a8433 &lt;unknown&gt;
+#4 0x57184f5c3b32 &lt;unknown&gt;
+#5 0x57184f6529e6 &lt;unknown&gt;
+#6 0x57184f634323 &lt;unknown&gt;
+#7 0x57184f602de0 &lt;unknown&gt;
+#8 0x57184f603dbe &lt;unknown&gt;
+#9 0x57184fa7d12b &lt;unknown&gt;
+#10 0x57184fa810c7 &lt;unknown&gt;
+#11 0x57184fa6a6cc &lt;unknown&gt;
+#12 0x57184fa81c47 &lt;unknown&gt;
+#13 0x57184fa4f67f &lt;unknown&gt;
+#14 0x57184faa0288 &lt;unknown&gt;
+#15 0x57184faa0450 &lt;unknown&gt;
+#16 0x57184fab0076 &lt;unknown&gt;
+#17 0x71064469ca94 &lt;unknown&gt;
+#18 0x710644729c3c &lt;unknown&gt;
+</msg>
+<msg time="2025-01-23T09:10:34.809728" level="FAIL">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+#0 0x57184fab11fa &lt;unknown&gt;
+#1 0x57184f5c166d &lt;unknown&gt;
+#2 0x57184f5a9772 &lt;unknown&gt;
+#3 0x57184f5a77e6 &lt;unknown&gt;
+#4 0x57184f5a7fcf &lt;unknown&gt;
+#5 0x57184f5b7877 &lt;unknown&gt;
+#6 0x57184f5cea45 &lt;unknown&gt;
+#7 0x57184f653143 &lt;unknown&gt;
+#8 0x57184f634323 &lt;unknown&gt;
+#9 0x57184f602de0 &lt;unknown&gt;
+#10 0x57184f603dbe &lt;unknown&gt;
+#11 0x57184fa7d12b &lt;unknown&gt;
+#12 0x57184fa810c7 &lt;unknown&gt;
+#13 0x57184fa6a6cc &lt;unknown&gt;
+#14 0x57184fa81c47 &lt;unknown&gt;
+#15 0x57184fa4f67f &lt;unknown&gt;
+#16 0x57184faa0288 &lt;unknown&gt;
+#17 0x57184faa0450 &lt;unknown&gt;
+#18 0x57184fab0076 &lt;unknown&gt;
+#19 0x71064469ca94 &lt;unknown&gt;
+#20 0x710644729c3c &lt;unknown&gt;
+</msg>
+<arg>locator=twotabsearchtextbox</arg>
+<arg>text=${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-01-23T09:10:33.686714" elapsed="1.127922">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+#0 0x57184fab11fa &lt;unknown&gt;
+#1 0x57184f5c166d &lt;unknown&gt;
+#2 0x57184f5a9772 &lt;unknown&gt;
+#3 0x57184f5a77e6 &lt;unknown&gt;
+#4 0x57184f5a7fcf &lt;unknown&gt;
+#5 0x57184f5b7877 &lt;unknown&gt;
+#6 0x57184f5cea45 &lt;unknown&gt;
+#7 0x57184f653143 &lt;unknown&gt;
+#8 0x57184f634323 &lt;unknown&gt;
+#9 0x57184f602de0 &lt;unknown&gt;
+#10 0x57184f603dbe &lt;unknown&gt;
+#11 0x57184fa7d12b &lt;unknown&gt;
+#12 0x57184fa810c7 &lt;unknown&gt;
+#13 0x57184fa6a6cc &lt;unknown&gt;
+#14 0x57184fa81c47 &lt;unknown&gt;
+#15 0x57184fa4f67f &lt;unknown&gt;
+#16 0x57184faa0288 &lt;unknown&gt;
+#17 0x57184faa0450 &lt;unknown&gt;
+#18 0x57184fab0076 &lt;unknown&gt;
+#19 0x71064469ca94 &lt;unknown&gt;
+#20 0x710644729c3c &lt;unknown&gt;
+</status>
+</kw>
+<status status="FAIL" start="2025-01-23T09:10:33.685238" elapsed="1.129987">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+#0 0x57184fab11fa &lt;unknown&gt;
+#1 0x57184f5c166d &lt;unknown&gt;
+#2 0x57184f5a9772 &lt;unknown&gt;
+#3 0x57184f5a77e6 &lt;unknown&gt;
+#4 0x57184f5a7fcf &lt;unknown&gt;
+#5 0x57184f5b7877 &lt;unknown&gt;
+#6 0x57184f5cea45 &lt;unknown&gt;
+#7 0x57184f653143 &lt;unknown&gt;
+#8 0x57184f634323 &lt;unknown&gt;
+#9 0x57184f602de0 &lt;unknown&gt;
+#10 0x57184f603dbe &lt;unknown&gt;
+#11 0x57184fa7d12b &lt;unknown&gt;
+#12 0x57184fa810c7 &lt;unknown&gt;
+#13 0x57184fa6a6cc &lt;unknown&gt;
+#14 0x57184fa81c47 &lt;unknown&gt;
+#15 0x57184fa4f67f &lt;unknown&gt;
+#16 0x57184faa0288 &lt;unknown&gt;
+#17 0x57184faa0450 &lt;unknown&gt;
+#18 0x57184fab0076 &lt;unknown&gt;
+#19 0x71064469ca94 &lt;unknown&gt;
+#20 0x710644729c3c &lt;unknown&gt;
+</status>
+</kw>
+<kw name="E clicar no botão de pesquisa" owner="base">
+<status status="NOT RUN" start="2025-01-23T09:10:34.818019" elapsed="0.000157"/>
+</kw>
+<kw name="E adicionar o produto &quot;Console Xbox Series S&quot; no carrinho" owner="base" source_name="E adicionar o produto &quot;${PRODUTO}&quot; no carrinho">
+<status status="NOT RUN" start="2025-01-23T09:10:34.818930" elapsed="0.000121"/>
+</kw>
+<kw name="Então o produto &quot;Console Xbox Series S&quot; deve ser mostrado no carrinho" owner="base" source_name="Então o produto &quot;${PRODUTO}&quot; deve ser mostrado no carrinho">
+<status status="NOT RUN" start="2025-01-23T09:10:34.823889" elapsed="0.000156"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-01-23T09:10:34.940524" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+#0 0x57184fab11fa &lt;unknown&gt;
+#1 0x57184f5c1810 &lt;unknown&gt;
+#2 0x57184f5a8555 &lt;unknown&gt;
+#3 0x57184f5a8433 &lt;unknown&gt;
+#4 0x57184f5c3b32 &lt;unknown&gt;
+#5 0x57184f6529e6 &lt;unknown&gt;
+#6 0x57184f634323 &lt;unknown&gt;
+#7 0x57184f602de0 &lt;unknown&gt;
+#8 0x57184f603dbe &lt;unknown&gt;
+#9 0x57184fa7d12b &lt;unknown&gt;
+#10 0x57184fa810c7 &lt;unknown&gt;
+#11 0x57184fa6a6cc &lt;unknown&gt;
+#12 0x57184fa81c47 &lt;unknown&gt;
+#13 0x57184fa4f67f &lt;unknown&gt;
+#14 0x57184faa0288 &lt;unknown&gt;
+#15 0x57184faa0450 &lt;unknown&gt;
+#16 0x57184fab0076 &lt;unknown&gt;
+#17 0x71064469ca94 &lt;unknown&gt;
+#18 0x710644729c3c &lt;unknown&gt;
+</msg>
+<msg time="2025-01-23T09:10:34.941352" level="FAIL">WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+#0 0x57184fab11fa &lt;unknown&gt;
+#1 0x57184f5c1810 &lt;unknown&gt;
+#2 0x57184f5a8555 &lt;unknown&gt;
+#3 0x57184f5a8433 &lt;unknown&gt;
+#4 0x57184f5c3b32 &lt;unknown&gt;
+#5 0x57184f6529e6 &lt;unknown&gt;
+#6 0x57184f634323 &lt;unknown&gt;
+#7 0x57184f602de0 &lt;unknown&gt;
+#8 0x57184f603dbe &lt;unknown&gt;
+#9 0x57184fa7d12b &lt;unknown&gt;
+#10 0x57184fa810c7 &lt;unknown&gt;
+#11 0x57184fa6a6cc &lt;unknown&gt;
+#12 0x57184fa81c47 &lt;unknown&gt;
+#13 0x57184fa4f67f &lt;unknown&gt;
+#14 0x57184faa0288 &lt;unknown&gt;
+#15 0x57184faa0450 &lt;unknown&gt;
+#16 0x57184fab0076 &lt;unknown&gt;
+#17 0x71064469ca94 &lt;unknown&gt;
+#18 0x710644729c3c &lt;unknown&gt;
+</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="FAIL" start="2025-01-23T09:10:34.826467" elapsed="0.116874">
