@@ -18,7 +18,7 @@ Caso de Teste 01 - Acesso ao menu "Eletrônicos"
 
 Caso de Teste 02 - Pesquisa de um Produto
     [Documentation]    Esse teste verifica a busca de um produto
-    [Tags]             busca_produtos  lista_busca
+    [Tags]             busca_produtos  lista_buscar
     Dado que estou na home page da Amazon.com.br
     Quando pesquisar pelo produto "Xbox Series S"
     E clicar no botão de pesquisa
