@@ -16,11 +16,6 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # Garante que todos os arquivos sejam baixados
-
-      - name: Debug Test Directory
-        run: ls -R  # Verifica se os testes estão no lugar correto
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -30,7 +25,10 @@ jobs:
       - name: Install Deps
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt 
+          python -m pip install -r requirements.txt
+
+      - name: Force Install Selenium
+        run: python -m pip install --upgrade selenium robotframework-seleniumlibrary
 
       - name: Check Selenium Installation
         run: python -c "import selenium; print(selenium.__version__)"
