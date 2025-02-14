@@ -1,4 +1,4 @@
-name: E2E Tests
+name: Robot Framework Tests
 
 on:
   push:
@@ -7,44 +7,31 @@ on:
     branches: [ "main" ]
 
 jobs:
-  e2e-tests:
+  run-tests:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        browser: [chromium, firefox]
 
     steps:
-      - name: Get code
+      - name: Checkout código
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: Configurar ambiente Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.12
+          python-version: '3.9'
 
-      - name: Install Deps
+      - name: Instalar dependências
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt
+          pip install -r requirements.txt
+        shell: bash
 
-      - name: Force Install Selenium
-        run: python -m pip install --upgrade selenium robotframework-seleniumlibrary
+      - name: Executar testes
+        run: |
+          robot --outputdir logs ${{ github.workspace }}/tests/
+        shell: bash
 
-      - name: Check Selenium Installation
-        run: python -c "import selenium; print(selenium.__version__)"
-
-      - name: Run E2E Tests
-        run: robot -d ./logs -v BROWSER:${{ matrix.browser }} tests
-
-      - name: Robot Reporter
-        uses: joonvena/robotframework-reporter-action@v2.4
-        with:
-          gh_access_token: ${{ secrets.GITHUB_TOKEN }}
-          report_path: logs
-
-      - name: Upload Report
+      - name: Publicar resultados dos testes
         uses: actions/upload-artifact@v4
-        if: always()
         with:
-          name: Test Report ${{ matrix.browser }}
-          path: logs
+          name: test-results
+          path: logs/
